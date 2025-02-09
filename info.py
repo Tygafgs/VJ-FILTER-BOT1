@@ -11,9 +11,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '24719696'))
-API_HASH = environ.get('API_HASH', '862d5b32031f8a9b9a547aca40ef1640')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8097788870:AAF_Akaun85R--9G6ZeSHE-27YVyVC1pJfA")
+API_ID = int(environ.get('API_ID', '25471015'))
+API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7926256533:AAF_Vz64FqrRMTR37jYXyC3wz7XrwGbC0JQ")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -21,15 +21,15 @@ PICS = (environ.get('PICS', 'https://envs.sh/N11.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8047797327').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6068324833').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002482323036'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002406799151'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002498430033').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002406799151').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -37,7 +37,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002477962995') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002254766492') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request File With command or hashtag like - /request or #request
@@ -59,8 +59,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anujmore9022:anujmore9022@cinema.hhtph.mongodb.net/?retryWrites=true&w=majority&appName=Cinema")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "anujmore9022")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jangalrani0:i3Zyz8TjgWKO7eQb@cluster0.d3hwp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
