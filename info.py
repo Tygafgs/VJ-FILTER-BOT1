@@ -126,8 +126,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://shortlink.com/')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'https://speedlinkurl.com/f6694cc21dbc1b4727e32ce3d27ab61893ec5277')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Pocolinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '90f5013aee678910531ae8b02d999c929e66aa99')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtodownlodee') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
